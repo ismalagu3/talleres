@@ -1,41 +1,12 @@
 import Link from "next/link"
 import { Phone, Mail, Clock, MapPin, Wrench, Car, Shield, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Header } from "@/components/layout/header"
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="sticky top-0 z-40 w-full border-b bg-background">
-        <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
-          <div className="flex gap-6 md:gap-10">
-            <Link href="/" className="flex items-center space-x-2">
-              <Wrench className="h-6 w-6" />
-              <span className="inline-block font-bold">Taller Mecánico Palencia</span>
-            </Link>
-            <nav className="hidden md:flex gap-6">
-              <Link href="/" className="text-sm font-medium transition-colors text-primary">
-                Inicio
-              </Link>
-              <Link href="/servicios" className="text-sm font-medium transition-colors hover:text-primary">
-                Servicios
-              </Link>
-              <Link href="/nosotros" className="text-sm font-medium transition-colors hover:text-primary">
-                Nosotros
-              </Link>
-              <Link href="/contacto" className="text-sm font-medium transition-colors hover:text-primary">
-                Contacto
-              </Link>
-            </nav>
-          </div>
-          <div className="flex flex-1 items-center justify-end space-x-4">
-            <div className="hidden md:flex items-center space-x-1">
-              <Phone className="h-4 w-4" />
-              <span className="text-sm font-medium">979 123 456</span>
-            </div>
-            <Button className="hidden md:inline-flex">Pedir Cita</Button>
-          </div>
-        </div>
-      </header>
+      <Header />
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-50 to-gray-50">
           <div className="container px-4 md:px-6">
@@ -45,7 +16,7 @@ export default function Home() {
                   Taller Mecánico de Confianza en Palencia
                 </h1>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Servicio profesional y de calidad para el mantenimiento y reparación de su vehículo. Más de 20 años de
+                  Servicio profesional y de calidad para el mantenimiento y reparación de su vehículo. Más de X años de
                   experiencia nos avalan.
                 </p>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -157,7 +128,7 @@ export default function Home() {
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Sobre Nosotros</h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Con más de 20 años de experiencia en el sector, nuestro taller mecánico en Palencia se ha convertido
+                  Con más de X años de experiencia en el sector, nuestro taller mecánico en Palencia se ha convertido
                   en un referente por la calidad de nuestro trabajo y la atención personalizada.
                 </p>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -286,7 +257,7 @@ export default function Home() {
       <footer className="w-full border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
           <p className="text-center text-sm leading-loose text-gray-500 md:text-left">
-            © 2024 Taller Mecánico Palencia. Todos los derechos reservados.
+            © 2024 VEYMAQ. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-4">
             <Link href="/politica-privacidad" className="text-sm text-gray-500 underline-offset-4 hover:underline">

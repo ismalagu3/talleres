@@ -1,37 +1,12 @@
 import Link from "next/link"
-import { Wrench, Phone, Mail, Clock, MapPin } from "lucide-react"
+import { Phone, Mail, Clock, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Header } from "@/components/layout/header"
 
 export default function Contacto() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="sticky top-0 z-40 w-full border-b bg-background">
-        <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
-          <div className="flex gap-6 md:gap-10">
-            <Link href="/" className="flex items-center space-x-2">
-              <Wrench className="h-6 w-6" />
-              <span className="inline-block font-bold">Taller Mecánico Palencia</span>
-            </Link>
-            <nav className="hidden md:flex gap-6">
-              <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
-                Inicio
-              </Link>
-              <Link href="/servicios" className="text-sm font-medium transition-colors hover:text-primary">
-                Servicios
-              </Link>
-              <Link href="/nosotros" className="text-sm font-medium transition-colors hover:text-primary">
-                Nosotros
-              </Link>
-              <Link href="/contacto" className="text-sm font-medium transition-colors text-primary">
-                Contacto
-              </Link>
-            </nav>
-          </div>
-          <div className="flex flex-1 items-center justify-end space-x-4">
-            <Button className="hidden md:inline-flex">Pedir Cita</Button>
-          </div>
-        </div>
-      </header>
+      <Header/>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-50 to-gray-50">
           <div className="container px-4 md:px-6">
@@ -64,8 +39,8 @@ export default function Contacto() {
                     <MapPin className="h-6 w-6 text-primary mt-0.5" />
                     <div>
                       <h3 className="font-bold">Dirección</h3>
-                      <p className="text-gray-500">Calle Ejemplo, 123</p>
-                      <p className="text-gray-500">34001 Palencia</p>
+                      <p className="text-gray-500">C/ Bordadores, 30 (Polígono de San Antolín)</p>
+                      <p className="text-gray-500">34004 - Palencia</p>
                     </div>
                   </div>
 
@@ -73,8 +48,8 @@ export default function Contacto() {
                     <Phone className="h-6 w-6 text-primary mt-0.5" />
                     <div>
                       <h3 className="font-bold">Teléfono</h3>
-                      <p className="text-gray-500">979 123 456</p>
-                      <p className="text-gray-500">654 321 987 (Móvil)</p>
+                      <p className="text-gray-500">979 724 818</p>
+                      <p className="text-gray-500">679 497 349 (Móvil)</p>
                     </div>
                   </div>
 
@@ -82,7 +57,7 @@ export default function Contacto() {
                     <Mail className="h-6 w-6 text-primary mt-0.5" />
                     <div>
                       <h3 className="font-bold">Email</h3>
-                      <p className="text-gray-500">info@tallermecanicopalencia.es</p>
+                      <p className="text-gray-500">administracion@veymaq.com</p>
                     </div>
                   </div>
 
@@ -90,7 +65,7 @@ export default function Contacto() {
                     <Clock className="h-6 w-6 text-primary mt-0.5" />
                     <div>
                       <h3 className="font-bold">Horario</h3>
-                      <p className="text-gray-500">Lunes a Viernes: 9:00 - 19:00</p>
+                      <p className="text-gray-500">Lunes a Viernes: 9:00 - 17:00</p>
                       <p className="text-gray-500">Sábados: 9:00 - 14:00</p>
                       <p className="text-gray-500">Domingos: Cerrado</p>
                     </div>
@@ -98,11 +73,14 @@ export default function Contacto() {
                 </div>
 
                 <div className="aspect-video w-full overflow-hidden rounded-lg border shadow-sm">
-                  <img
-                    alt="Mapa de ubicación"
-                    className="object-cover w-full h-full"
-                    src="/placeholder.svg?height=400&width=600"
-                  />
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.763823875836!2d-4.504367791484901!3d42.00534395108433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd47b1c3f28ff82b%3A0x685b344a9f28580d!2sTalleres%20veymaq!5e0!3m2!1ses!2ses!4v1743114467063!5m2!1ses!2ses"
+                    width="600"
+                    height="450"
+                    style={{ border: '0' }}
+                    allowFullScreen
+                    loading="lazy">
+                  </iframe>
                 </div>
               </div>
 

@@ -1,37 +1,12 @@
 import Link from "next/link"
 import { Wrench, Award, Clock, Users, Star, ShieldCheck } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Header } from "@/components/layout/header"
 
 export default function Nosotros() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="sticky top-0 z-40 w-full border-b bg-background">
-        <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
-          <div className="flex gap-6 md:gap-10">
-            <Link href="/" className="flex items-center space-x-2">
-              <Wrench className="h-6 w-6" />
-              <span className="inline-block font-bold">Taller Mecánico Palencia</span>
-            </Link>
-            <nav className="hidden md:flex gap-6">
-              <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
-                Inicio
-              </Link>
-              <Link href="/servicios" className="text-sm font-medium transition-colors hover:text-primary">
-                Servicios
-              </Link>
-              <Link href="/nosotros" className="text-sm font-medium transition-colors text-primary">
-                Nosotros
-              </Link>
-              <Link href="/contacto" className="text-sm font-medium transition-colors hover:text-primary">
-                Contacto
-              </Link>
-            </nav>
-          </div>
-          <div className="flex flex-1 items-center justify-end space-x-4">
-            <Button className="hidden md:inline-flex">Pedir Cita</Button>
-          </div>
-        </div>
-      </header>
+      <Header/>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-50 to-gray-50">
           <div className="container px-4 md:px-6">
