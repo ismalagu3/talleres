@@ -32,7 +32,7 @@ export default function Home() {
                 <img
                   alt="Taller mecánico"
                   className="object-cover w-full h-full"
-                  src="/placeholder.svg?height=500&width=800"
+                  src="/images/veymaq.jpg"
                 />
               </div>
             </div>
