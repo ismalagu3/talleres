@@ -16,7 +16,7 @@ export function MobileMenu() {
       {/* Botón de menú hamburguesa */}
       <button
         onClick={toggleMenu}
-        className="p-2 text-primary focus:outline-none focus:ring-2 focus:ring-secondary"
+        className="relative p-2 text-primary focus:outline-none focus:ring-2 focus:ring-secondary top-0 right-0"
         aria-label="Abrir menú"
       >
         {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

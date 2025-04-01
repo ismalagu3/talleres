@@ -40,6 +40,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="msapplication-config" content="/browserconfig.xml" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="VEYMAQ - Vehículos y Maquinaria." />
+        <meta name="keywords" content="VEYMAQ, Vehículos, Maquinaria, Servicios" />
+        <meta name="author" content="VEYMAQ" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="VEYMAQ" />
+        <meta property="og:description" content="VEYMAQ - Vehículos y Maquinaria." />
+        <meta property="og:image" content="/og-image.png" />
+        <meta property="og:url" content="https://www.veymaq.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="VEYMAQ" />
+        <meta property="og:locale" content="es_ES" />
+      </head>   
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
