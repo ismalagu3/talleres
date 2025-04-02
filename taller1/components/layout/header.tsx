@@ -8,22 +8,22 @@ import { MobileMenu } from "./mobile-menu";
 export function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background text-primary">
-      <div className="px-4 md:px-14 flex h-16 w-full items-center justify-between">
+      <div className="px-4 md:px-14 flex h-16 w-full items-center justify-center">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <Wrench className="h-6 w-6" />
-          <span className="text-2xl inline-block font-bold">VEYMAQ</span>
+          <span className="text-4xl inline-block font-bold">VEYMAQ</span>
         </Link>
 
         {/* Menú de navegación para pantallas grandes */}
-        <nav className="hidden md:flex gap-6 px-10">
-          <Link href="/servicios" className="text-base font-medium transition-colors hover:text-secondary">
+        <nav className="hidden md:flex gap-6 px-10 text-xl">
+          <Link href="/servicios" className="font-medium transition-all hover:text-secondary">
             Servicios
           </Link>
-          <Link href="/nosotros" className="text-base font-medium transition-colors hover:text-secondary">
+          <Link href="/nosotros" className="font-medium transition-colors hover:text-secondary">
             Nosotros
           </Link>
-          <Link href="/contacto" className="text-base font-medium transition-colors hover:text-secondary">
+          <Link href="/contacto" className="font-medium transition-colors hover:text-secondary">
             Contacto
           </Link>
         </nav>

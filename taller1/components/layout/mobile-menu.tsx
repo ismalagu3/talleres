@@ -16,40 +16,42 @@ export function MobileMenu() {
       {/* Botón de menú hamburguesa */}
       <button
         onClick={toggleMenu}
-        className="relative p-2 text-primary focus:outline-none focus:ring-2 focus:ring-secondary top-0 right-0"
+        className="relative p-2 text-primary transform duration-300 hover:scale-105"
         aria-label="Abrir menú"
       >
-        {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        {isOpen ? <X className="h-6 w-6 transform" /> : <Menu className="h-6 w-6 transform" />}
       </button>
 
-      {/* Menú desplegable */}
-      {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-background shadow-lg z-50">
-          <nav className="flex flex-col items-center space-y-4 py-4">
-            <Link
-              href="/servicios"
-              className="text-base font-medium text-primary hover:text-secondary"
-              onClick={() => setIsOpen(false)}
-            >
-              Servicios
-            </Link>
-            <Link
-              href="/nosotros"
-              className="text-base font-medium text-primary hover:text-secondary"
-              onClick={() => setIsOpen(false)}
-            >
-              Nosotros
-            </Link>
-            <Link
-              href="/contacto"
-              className="text-base font-medium text-primary hover:text-secondary"
-              onClick={() => setIsOpen(false)}
-            >
-              Contacto
-            </Link>
-          </nav>
-        </div>
-      )}
+      {/* Menú desplegable con animación */}
+      <div
+        className={`absolute top-16 left-0 w-full bg-background shadow-lg z-50 transform transition-all duration-300 ${
+          isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
+        }`}
+      >
+        <nav className="flex flex-col items-center space-y-4 py-4 text-2xl">
+          <Link
+            href="/servicios"
+            className="font-medium text-primary hover:text-secondary"
+            onClick={() => setIsOpen(false)}
+          >
+            Servicios
+          </Link>
+          <Link
+            href="/nosotros"
+            className="font-medium text-primary hover:text-secondary"
+            onClick={() => setIsOpen(false)}
+          >
+            Nosotros
+          </Link>
+          <Link
+            href="/contacto"
+            className="font-medium text-primary hover:text-secondary"
+            onClick={() => setIsOpen(false)}
+          >
+            Contacto
+          </Link>
+        </nav>
+      </div>
     </div>
   );
 }
