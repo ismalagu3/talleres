@@ -75,11 +75,10 @@ export default function Contacto() {
                 <div className="aspect-video w-full overflow-hidden rounded-lg border shadow-sm">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.763823875836!2d-4.504367791484901!3d42.00534395108433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd47b1c3f28ff82b%3A0x685b344a9f28580d!2sTalleres%20veymaq!5e0!3m2!1ses!2ses!4v1743114467063!5m2!1ses!2ses"
-                    width="600"
-                    height="450"
                     style={{ border: '0' }}
                     allowFullScreen
-                    loading="lazy">
+                    loading="lazy"
+                    className="w-full h-full">
                   </iframe>
                 </div>
               </div>
@@ -220,28 +219,28 @@ export default function Contacto() {
                 Respuestas a las preguntas más comunes de nuestros clientes.
               </p>
               <div className="mx-auto grid max-w-3xl gap-4 mt-8">
-                <div className="rounded-lg border p-4">
+                <div className="rounded-lg border p-4 hover:border-primary transition duration-300">
                   <h3 className="font-bold">¿Cuánto tiempo tarda una reparación?</h3>
                   <p className="text-gray-500 mt-1">
                     El tiempo de reparación depende del tipo de avería. Le informaremos del plazo estimado cuando
                     realicemos el diagnóstico de su vehículo.
                   </p>
                 </div>
-                <div className="rounded-lg border p-4">
+                <div className="rounded-lg border p-4 hover:border-primary transition duration-300">
                   <h3 className="font-bold">¿Ofrecen servicio de recogida y entrega?</h3>
                   <p className="text-gray-500 mt-1">
                     Sí, disponemos de servicio de recogida y entrega de vehículos en Palencia y alrededores. Consulte
                     condiciones.
                   </p>
                 </div>
-                <div className="rounded-lg border p-4">
+                <div className="rounded-lg border p-4 hover:border-primary transition duration-300">
                   <h3 className="font-bold">¿Qué garantía tienen las reparaciones?</h3>
                   <p className="text-gray-500 mt-1">
                     Todas nuestras reparaciones tienen una garantía de 12 meses en piezas y mano de obra, según
                     establece la normativa vigente.
                   </p>
                 </div>
-                <div className="rounded-lg border p-4">
+                <div className="rounded-lg border p-4 hover:border-primary transition duration-300">
                   <h3 className="font-bold">¿Es necesario pedir cita previa?</h3>
                   <p className="text-gray-500 mt-1">
                     Para garantizar un servicio óptimo, recomendamos solicitar cita previa. No obstante, atendemos

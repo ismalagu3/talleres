@@ -47,7 +47,7 @@ export default function Nosotros() {
                 <img
                   alt="Nuestro taller"
                   className="object-cover w-full h-full"
-                  src="/placeholder.svg?height=500&width=800"
+                  src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 />
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function Nosotros() {
                 <img
                   alt="Nuestro equipo"
                   className="object-cover w-full h-full"
-                  src="/placeholder.svg?height=500&width=800"
+                  src="https://plus.unsplash.com/premium_photo-1677009835876-4a29ddc4cc2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 />
               </div>
               <div className="order-1 lg:order-2 space-y-4">

@@ -2,39 +2,39 @@ import Link from "next/link"
 import { Phone, Mail, Clock, MapPin, Wrench, Car, Shield, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/layout/header"
+import Image from "next/image"
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-50 to-gray-50">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="space-y-4">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Taller Mecánico de Confianza en Palencia
-                </h1>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Servicio profesional y de calidad para el mantenimiento y reparación de su vehículo. Más de X años de
-                  experiencia nos avalan.
-                </p>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg" asChild>
-                    <Link href="/contacto">Solicitar Presupuesto</Link>
-                  </Button>
-                  <Button size="lg" variant="outline" asChild>
-                    <Link href="/servicios">Nuestros Servicios</Link>
-                  </Button>
-                </div>
-              </div>
-              <div className="mx-auto w-full max-w-[500px] aspect-video overflow-hidden rounded-xl">
-                <img
-                  alt="Taller mecánico"
-                  className="object-cover w-full h-full"
-                  src="/images/veymaq.jpg"
-                />
-              </div>
+        <section className="w-full -m-12">
+          <div className="h-screen">
+            <Image
+              src="/images/veymaq.jpg"
+              alt="Veymaq"
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+          <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 text-center">
+            <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl p-2 bg-black bg-opacity-50 rounded-md">
+              Vehículos y Maquinaria
+            </h1>
+            <p className="mt-0 max-w-[600px] text-gray-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed bg-black p-2 bg-opacity-50 rounded-md">
+              Servicio profesional y de calidad para el mantenimiento y reparación de su vehículo. Más de X años de experiencia nos avalan.
+            </p>
+            <div className="flex flex-col gap-2 min-[400px]:flex-row md:justify-start justify-center">
+              <Button size="lg" asChild>
+                <Link href="/contacto">Solicitar Presupuesto</Link>
+              </Button>
+              <Button size="lg" variant={"outline"} asChild>
+                <Link href="/servicios">Nuestros Servicios</Link>
+              </Button>
             </div>
           </div>
         </section>
@@ -122,7 +122,7 @@ export default function Home() {
                 <img
                   alt="Nuestro equipo"
                   className="object-cover w-full h-full"
-                  src="/placeholder.svg?height=500&width=800"
+                  src="https://plus.unsplash.com/premium_photo-1677009835876-4a29ddc4cc2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 />
               </div>
               <div className="space-y-4">
@@ -159,28 +159,30 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-primary" />
-                  <p className="text-gray-500">Calle Ejemplo, 123, 34001 Palencia</p>
+                  <p className="text-gray-500">C/ Bordadores, 30 (Polígono de San Antolín)</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-primary" />
-                  <p className="text-gray-500">979 123 456</p>
+                  <p className="text-gray-500">979 724 818</p>
+                  <p className="text-gray-500">679 497 349 (Móvil)</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-primary" />
-                  <p className="text-gray-500">info@tallermecanicopalencia.es</p>
+                  <p className="text-gray-500">administracion@veymaq.com</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Clock className="h-5 w-5 text-primary" />
                   <div>
                     <p className="text-gray-500">Lunes a Viernes: 9:00 - 19:00</p>
                     <p className="text-gray-500">Sábados: 9:00 - 14:00</p>
+                    <p className="text-gray-500">Domingos: Cerrado</p>
                   </div>
                 </div>
                 <div className="aspect-video w-full overflow-hidden rounded-lg">
                   <img
                     alt="Mapa de ubicación"
                     className="object-cover w-full h-full"
-                    src="/placeholder.svg?height=400&width=600"
+                    src="https://images.unsplash.com/photo-1642399299924-c9c97617bf86?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   />
                 </div>
               </div>
