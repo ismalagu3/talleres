@@ -8,13 +8,12 @@ import { MobileMenu } from "./mobile-menu";
 export function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background text-primary">
-      <div className="px-4 md:px-14 flex h-16 w-full items-center justify-center">
-
-        <Link href="/" className="flex items-center space-x-2 h-full">
+      <div className="px-4 md:px-14 flex h-12 w-full items-center justify-between">
+        <Link href="/" className="">
           <img
             src="/images/logo_veymaq.png"
             alt="Logo Veymaq"
-            className="h-16 w-auto"
+            className="h-10 w-auto"
           />
         </Link>
 

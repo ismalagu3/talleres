@@ -24,11 +24,11 @@ export function MobileMenu() {
 
       {/* Menú desplegable con animación */}
       <div
-        className={`absolute top-16 left-0 w-full bg-background shadow-lg z-50 transform transition-all duration-300 ${
-          isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
+        className={`absolute top-12 left-0 w-full bg-background shadow-lg z-50 transform transition-all duration-300 ${
+          isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
-        <nav className="flex flex-col items-center space-y-4 py-4 text-2xl">
+        <nav className="flex flex-col items-center space-y-4 py-4 text-xl">
           <Link
             href="/servicios"
             className="font-medium text-primary hover:text-secondary"
