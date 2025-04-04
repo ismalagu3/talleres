@@ -3,8 +3,11 @@ import { Phone, Mail, Clock, MapPin, Wrench, Car, Shield, Users } from "lucide-r
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/layout/header"
 import Image from "next/image"
+
+{/*
 import Instagram from "@/lib/icons/instagram"
 import Facebook from "@/lib/icons/facebook"
+*/}
 
 export default function Home() {
   return (
