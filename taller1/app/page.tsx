@@ -3,6 +3,8 @@ import { Phone, Mail, Clock, MapPin, Wrench, Car, Shield, Users } from "lucide-r
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/layout/header"
 import Image from "next/image"
+import Instagram from "@/lib/icons/instagram"
+import Facebook from "@/lib/icons/facebook"
 
 export default function Home() {
   return (
@@ -119,26 +121,26 @@ export default function Home() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Sobre Nosotros</h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[600px] mx-auto text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Con más de X años de experiencia en el sector, nuestro taller mecánico en Palencia se ha convertido
                 en un referente por la calidad de nuestro trabajo y la atención personalizada.
               </p>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[600px] mx-auto text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Contamos con un equipo de profesionales altamente cualificados y las herramientas más modernas para
                 ofrecer el mejor servicio a nuestros clientes.
               </p>
-              <div className="mx-auto w-full max-w-[500px] aspect-video overflow-hidden rounded-xl">
-                <img
-                  alt="Nuestro equipo"
-                  className="object-cover w-full h-full"
-                  src="https://plus.unsplash.com/premium_photo-1677009835876-4a29ddc4cc2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                />
-              </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
+              <div>
                 <Button size="lg" variant="outline" asChild>
                   <Link href="/nosotros">Conoce Nuestro Equipo</Link>
                 </Button>
               </div>
+            </div>
+            <div className="mx-auto w-full max-w-[500px] aspect-video overflow-hidden rounded-xl">
+              <img
+                alt="Nuestro equipo"
+                className="object-cover w-full h-full"
+                src="https://plus.unsplash.com/premium_photo-1677009835876-4a29ddc4cc2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              />
             </div>
           </div>
         </div>
@@ -173,8 +175,7 @@ export default function Home() {
                 <Clock className="h-5 w-5 text-primary" />
                 <div>
                   <p className="text-gray-500">Lunes a Viernes: 9:00 - 19:00</p>
-                  <p className="text-gray-500">Sábados: 9:00 - 14:00</p>
-                  <p className="text-gray-500">Domingos: Cerrado</p>
+                  <p className="text-gray-500">Sábados y Domingos: Cerrado</p>
                 </div>
               </div>
               <div className="aspect-video w-full overflow-hidden rounded-lg">
@@ -254,11 +255,26 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <footer className="w-full border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
           <p className="text-center text-sm leading-loose text-gray-500 md:text-left">
             © 2025 VEYMAQ. Todos los derechos reservados.
           </p>
+          {/*
+          <div className="w-32">
+            <p className="w-8">
+              <Link href="https://www.instagram.com/veymaq/" target="_blank">
+                <Instagram />
+              </Link>
+            </p>
+            <p className="w-8">
+              <Link href="https://www.facebook.com/veymaq.vehiculosmaquinaria?locale=es_ES" target="_blank">
+                <Facebook />
+              </Link>
+            </p>
+          </div>
+          */}
           <div className="flex items-center gap-4">
             <Link href="/politica-privacidad" className="text-sm text-gray-500 underline-offset-4 hover:underline">
               Política de Privacidad
