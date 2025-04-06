@@ -1,12 +1,10 @@
 import Link from "next/link"
 import { Phone, Mail, Clock, MapPin } from "lucide-react"
-import { Header } from "@/components/layout/header"
 import ContactForm from "@/components/layout/ContactForm"
 
 export default function Contacto() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-50 to-gray-50">
           <div className="container px-4 md:px-6">
@@ -90,7 +88,7 @@ export default function Contacto() {
                   </p>
                 </div>
 
-                <ContactForm/>
+                <ContactForm />
 
               </div>
             </div>
@@ -138,21 +136,6 @@ export default function Contacto() {
           </div>
         </section>
       </main>
-      <footer className="w-full border-t py-6 md:py-0">
-        <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
-          <p className="text-center text-sm leading-loose text-gray-500 md:text-left">
-            © 2024 Taller Mecánico Palencia. Todos los derechos reservados.
-          </p>
-          <div className="flex items-center gap-4">
-            <Link href="/politica-privacidad" className="text-sm text-gray-500 underline-offset-4 hover:underline">
-              Política de Privacidad
-            </Link>
-            <Link href="/aviso-legal" className="text-sm text-gray-500 underline-offset-4 hover:underline">
-              Aviso Legal
-            </Link>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
